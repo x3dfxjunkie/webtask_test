@@ -17,7 +17,7 @@ module.exports = function (input, bail) {
             weather.temp_f + ' f, ' +
             weather.relative_humidity + ' humidity, ' +
             weather.pressure_in + ' pressure, ' +
-            'under ' + weather.weather + 'conditions'
+            'under ' + weather.weather + ' conditions.'
         );
       }
     })
