@@ -1,3 +1,8 @@
+/*
+Handle a push from IFTTT when my Nest goes into Home / Away
+mode, and log the date with current (outside) weather conditions.
+*/
+
 var date = new Date();
 var MongoClient = require('mongodb').MongoClient;
 var Request = require('request');
