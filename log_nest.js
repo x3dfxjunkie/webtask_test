@@ -28,14 +28,13 @@ module.exports = function (input, bail) {
                 "pressure":weather.pressure_in,
                 "conditions":weather.weather
             });
-        };
+        });
 
         bail(null, 'Logged with location conditions: ' +
             weather.temp_f + ' f, ' +
             weather.relative_humidity + ' humidity, ' +
             weather.pressure_in + ' pressure, ' +
             'under ' + weather.weather + ' conditions.'
-            );
-        })
-    }
+        );
+    })
 }
