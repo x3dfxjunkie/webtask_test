@@ -31,7 +31,7 @@ module.exports = function (input, bail) {
         });
 
         bail(null, 'Logged with location conditions: ' +
-            weather.temp_f + ' f, ' +
+            weather.temp_f + 'F, ' +
             weather.relative_humidity + ' humidity, ' +
             weather.pressure_in + ' pressure, ' +
             'under ' + weather.weather + ' conditions.'
