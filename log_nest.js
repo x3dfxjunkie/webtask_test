@@ -1,9 +1,9 @@
 var MongoClient = require('mongodb').MongoClient;
 var Request = require('request');
 
-module.exports = function (data, bail) {
+module.exports = function (input, bail) {
     // Pass the api key in with the request.
-    var WeatherUnderground = 'https://api.wunderground.com/api/' + wu_api_key + '/conditions/q/zmw:23456.1.99999.json';
+    var WeatherUnderground = 'https://api.wunderground.com/api/' + input.data.WU_API_KEY + '/conditions/q/zmw:23456.1.99999.json';
 
     Request(WeatherUnderground, function (error, response, body) {
       if (!error && response.statusCode == 200) {
